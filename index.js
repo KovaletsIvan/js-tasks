@@ -139,9 +139,10 @@ function sequence(start = 0, step = 1) {
 //------------------------------------вам нужно просто добавить еще одну переменную
 function sequence(start = 0, step = 1) {
 	let number = start;
-
+	console.log('num '+number)
 	return function () {
 		let outputNumber = number;
+    		console.log('out '+outputNumber)
 		number += step;
 		return outputNumber
 	}
