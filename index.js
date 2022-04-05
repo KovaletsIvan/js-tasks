@@ -136,6 +136,17 @@ function sequence(start = 0, step = 1) {
   };
 }
 
+//------------------------------------вам нужно просто добавить еще одну переменную
+function sequence(start = 0, step = 1) {
+	let number = start;
+
+	return function () {
+		let outputNumber = number;
+		number += step;
+		return outputNumber
+	}
+}
+
 const generator1 = sequence(5, 2);
 
 console.log(generator1());
